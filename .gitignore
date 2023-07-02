@@ -1,17 +1,39 @@
-#Django:
-*.log
-*.pot
-*.pyc
-__pycache__/
-local_settings.py
-db.sqlite3
-media
-.env
-.venv
-env/
+# Ignorar a pasta da venv
 venv/
-ENV/
-env.bak/
-venv.bak/
-docker-compose.yml
-db-data/
+
+# Ignorar arquivos de cache do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignorar arquivos gerados pelo VSCode
+.vscode/
+
+# Ignorar arquivos de banco de dados SQLite do Django
+*.sqlite3
+
+# Ignorar arquivos de mídia (por exemplo, uploads de usuários)
+media/
+
+# Ignorar arquivos de logs do Django
+*.log
+
+# Ignorar arquivos estáticos coletados pelo Django
+staticfiles/
+
+# Ignorar arquivos de configuração local (por exemplo, settings.py)
+local_settings.py
+
+# Ignorar arquivos de segredos ou chaves
+secret_key.txt
+client_secrets.json
+
+# Ignorar arquivos gerados pelos gerenciadores de dependências
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Ignorar arquivos temporários
+*.swp
+*.bak
+*.~
